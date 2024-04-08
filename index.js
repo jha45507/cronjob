@@ -38,7 +38,7 @@ cron.schedule('*/30 * * * * *', async () => {
            let haveMain = global.filter((i) => i.Email == postData.Email )
 
             if (haveMain.length == 0 || haveMain[0].Email !== postData.Email) {
-                fetch('https://automail-qrgxsy7ij-jha45507s-projects.vercel.app/api/mail', {
+                fetch('https://main--automailsender.netlify.app/api/mail/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
